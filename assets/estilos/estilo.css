@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 40px 1fr 50px;
+    grid-template-areas: 
+        "zh" "zn" "zs" "zf";
+}
+header{
+    grid-area: zh;
+    background-color: black;
+    color: white;
+}
+nav{
+    grid-area: zn;
+    background-color: #444;
+    color: white;
+}
+section{
+    grid-area: zs;
+    background-color: #ddd;
+    color: black;
+}
+footer{
+    grid-area: zf;
+    background-color: black;
+    color: white;
+}
+#carrusel{
+    position: relative;
+    background-color: lightblue;
+    overflow: hidden;
+    width: 720px;
+    height: 240px;
+    margin: 30px auto;
+}
+#tira{
+    position: absolute;
+}
+#tira > div{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    margin: 20px;
+    float: left;
+}
+#izq{
+    position: absolute;
+    top: 45%;
+}
+#der{
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
